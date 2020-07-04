@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#1743B0`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -27,6 +27,14 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <button className="snipcart-checkout">
+        <div>
+          🛒: <span className="snipcart-items-count" />
+        </div>
+        <div>
+          Prix: <span className="snipcart-total-price" />
+        </div>
+      </button>
     </div>
   </header>
 )

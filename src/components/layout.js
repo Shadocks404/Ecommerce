@@ -25,7 +25,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <div
+        id="snipcart"
+        data-api-key="ZTZkMGE1MTItYjgwOC00Yjc0LTkwZTItMGQxYjM0NjliYTMyNjM3MjkzOTQwMTUxMDMwODg2"
+        data-autopop="false"
+        hidden
+      ></div>
+
+      <Header siteTitle="Ecommerce site" />
       <div
         style={{
           margin: `0 auto`,
@@ -35,9 +42,8 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()},{` `}
+          <a href="#">Deshaye's industries</a>
         </footer>
       </div>
     </>
